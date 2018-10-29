@@ -1,0 +1,23 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE IF EXISTS accounts, results;
+SET FOREIGN_KEY_CHECKS=1;
+
+
+CREATE TABLE accounts(
+	username VARCHAR(50) PRIMARY KEY,
+	password VARCHAR(256),
+	firstName VARCHAR(50),
+	lastName VARCHAR(50)
+);
+
+
+CREATE TABLE results(
+	entryID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(50) NOT NULL,
+	artName VARCHAR(50),
+	collName VARCHAR(50),
+	price VARCHAR(20),
+	type, VARCHAR(50),
+	dateMade TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	FOREIGN KEY (username) REFERENCES accounts(username)
+);
