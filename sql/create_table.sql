@@ -17,7 +17,7 @@ CREATE TABLE results(
 	artName VARCHAR(50),
 	collName VARCHAR(50),
 	price VARCHAR(20),
-	type, VARCHAR(50),
+	type VARCHAR(50),
 	dateMade TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	FOREIGN KEY (username) REFERENCES accounts(username)
 );

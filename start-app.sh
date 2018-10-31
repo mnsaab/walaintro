@@ -1,0 +1,1 @@
+docker run walaintro:latest -e MYSQL_HOST=localhost -e MYSQL_PORT=33060
