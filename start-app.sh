@@ -1,1 +1,1 @@
-docker run walaintro:latest -e MYSQL_HOST=localhost -e MYSQL_PORT=33060
+docker run -e MYSQL_ROOT_HOST=172.17.0.1 -e MYSQL_ROOT_PASSWORD=password -e MYSQL_USER=root -d mysql/mysql-server
