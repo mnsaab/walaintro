@@ -1,7 +1,7 @@
 env = dict(
 	host = '127.0.0.1',
-	port = '33060',
+	port = '3306',
 	user = 'root',
-	password = '',
+	password = 'aJYD@SulEnYJIbuhefRyl&@LAPLY',
 	db = 'wala',
 )
