@@ -1,5 +1,5 @@
 env = dict(
-	host = '0.0.0.0',
+	host = 'localhost',
 	port = 3000,
 	user = 'root',
 	password = '',
