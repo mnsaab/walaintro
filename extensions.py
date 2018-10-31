@@ -1,6 +1,7 @@
 import MySQLdb
 import MySQLdb.cursors
 import config
+import os
 
 def connect_to_database():
 	host = os.getenv('MYSQL_HOST', config.env['host'])
