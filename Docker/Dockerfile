@@ -10,7 +10,7 @@ RUN apt-get install -y mysql-server
 
 RUN apt-get install -y python 
 RUN apt-get install -y python-pip python-dev build-essential
-RUN pip install flask mysqlclient
+RUN pip install flask mysqlclient 
 
 RUN apt-get install -y git
 
