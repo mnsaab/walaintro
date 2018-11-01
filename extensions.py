@@ -19,3 +19,4 @@
 # 	return db
 
 # db = connect_to_database()
+db = ''
