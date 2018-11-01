@@ -14,8 +14,8 @@ RUN pip install flask mysqlclient
 
 RUN apt-get install -y git
 
-RUN git clone https://github.com/mnsaab/walaintro.git
 COPY files/startscript.sh /root/startscript.sh
 RUN chmod +x /root/startscript.sh 
 RUN chmod -R 755 /var/lib/mysql/
 ENTRYPOINT ["bash", "/root/startscript.sh"]
+RUN git clone https://github.com/mnsaab/walaintro.git
