@@ -6,7 +6,7 @@ import os
 def connect_to_database():
 	host = os.getenv('MYSQL_HOST', config.env['host'])
 	options = {
-		'port': '3306',
+		'port': 3306,
 		'host': host,
 		'user': config.env['user'],
 		'passwd': config.env['password'],
