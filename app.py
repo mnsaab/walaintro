@@ -15,4 +15,4 @@ host = os.getenv('MYSQL_HOST', config.env['host'])
 port = os.getenv('MYSQL_PORT', config.env['port'])
 print(host, port)
 if __name__ == '__main__':
-	app.run(host=host, port=port, debug=True)
+	app.run(debug=True)
